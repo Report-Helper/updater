@@ -18,8 +18,8 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <TextBlock Name="StatusText" Grid.Row="1" VerticalAlignment="Top" Text="Инициализация" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
-        <TextBlock Name="DetailsText" Grid.Row="1" VerticalAlignment="Top" Text="Инициализация программы" FontSize="15" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" Margin="-10,40,0,0" />
+        <TextBlock Grid.Row="1" VerticalAlignment="Top" Text="Обновление" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+        <TextBlock Grid.Row="1" VerticalAlignment="Top" Text="Не выключайте компьютер и интернет" FontSize="15" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" Margin="-10,40,0,0" />
         <loadin:LoadingIndicator Height="50" VerticalAlignment="Top" Margin="0,105,0,0" Style="{DynamicResource LoadingIndicatorWaveStyle}" Foreground="White"></loadin:LoadingIndicator>
     </Grid>
 </Window>
