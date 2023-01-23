@@ -1,0 +1,25 @@
+﻿<Window x:Class="updater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:updater"
+        xmlns:loadin="clr-namespace:LoadingIndicators.WPF;assembly=LoadingIndicators.WPF"
+        mc:Ignorable="d"
+        Title="Обновление Report Helper" Height="350" Width="350"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="#090012"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="StatusText" Grid.Row="1" VerticalAlignment="Top" Text="Инициализация" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+        <TextBlock Name="DetailsText" Grid.Row="1" VerticalAlignment="Top" Text="Инициализация программы" FontSize="15" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" Margin="-10,40,0,0" />
+        <loadin:LoadingIndicator Height="50" VerticalAlignment="Top" Margin="0,105,0,0" Style="{DynamicResource LoadingIndicatorWaveStyle}" Foreground="White"></loadin:LoadingIndicator>
+    </Grid>
+</Window>
